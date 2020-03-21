@@ -9,8 +9,8 @@ end
 def input_to_index(userinput)
   userinput.to_i - 1
 end
-def move (array, index1, value = "X")
-  array[index1] = value
+def move (array, index, value = "X")
+  array[index] = value
 end
 
 def position_taken?(board, index)
@@ -32,13 +32,15 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   user_move = gets.to_i
-  if valid_move?(board, input_to_index(user_move)) == false
-    counter = 0
-    until counter < 10
-      puts "Please enter another number:"
-      user_move = gets.to_i
-      valid_move?(board, input_to_index(user_move))
-      counter += 1
-    end
-  end
+  if valid_move?(board, input_to_index(user_move)) == true
+    move(board, user_move, value = "X")
+      else
+        counter = 0
+        until counter < 10
+        puts "Please enter another number:"
+        user_move = gets.to_i
+        valid_move?(board, input_to_index(user_move))
+        counter += 1
+        end
+      end
 end
