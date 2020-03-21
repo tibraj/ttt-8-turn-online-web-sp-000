@@ -38,4 +38,5 @@ def turn(board)
       puts "Please enter another number:"
       counter += 1
     end
-  end 
+  end
+end
