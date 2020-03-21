@@ -28,3 +28,7 @@ def valid_move?(board, index)
     return false
   end
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+end
