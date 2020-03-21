@@ -36,6 +36,10 @@ def turn(board)
     move(board, user_move, value = "X")
     display_board(board)
   else
+    counter = 0
+    until counter < 10
     turn(board)
+    count += 1
+    end
   end
 end
