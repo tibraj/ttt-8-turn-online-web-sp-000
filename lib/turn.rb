@@ -33,13 +33,4 @@ def turn(board)
   puts "Please enter 1-9:"
   user_move = gets.to_i
   valid_move?(board, input_to_index(user_move))
-  if valid_move? == true
-     move (board, user_move, value = "X")
-   else
-     counter = 0
-     until counter < 9
-       puts "Please enter another number:"
-       counter += 1
-     end
-   end
 end
