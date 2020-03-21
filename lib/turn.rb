@@ -37,12 +37,3 @@ def turn(board)
     move (board, user_move, value = "X")
   end
 end
-if valid_move? == true
-   move (board, user_move, value = "X")
- else
-   counter = 0
-   until counter < 9
-     puts "Please enter another number:"
-     counter += 1
-   end
- end
