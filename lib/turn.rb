@@ -33,12 +33,7 @@ def turn(board)
   puts "Please enter 1-9:"
   user_move = gets.to_i
   valid_move?(board, input_to_index(user_move))
-  repeated_validation(user_move)
-  display_board(board)
-end
-def repeated_validation(playermove)
-  first_move = valid_move?(board, input_to_index(playermove))
-  if first_move == true
+  if valid_move? == true
      move (board, user_move, value = "X")
    else
      counter = 0
@@ -47,4 +42,4 @@ def repeated_validation(playermove)
        counter += 1
      end
    end
- end
+end
