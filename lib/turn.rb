@@ -35,5 +35,13 @@ def turn(board)
   if valid_move?(board, input_to_index(user_move)) == true
     move(board, user_move, value = "X")
     display_board(board)
+  else
+    counter = 0
+    until counter < 10
+    puts "Please enter another number:"
+    user_move = gets.to_i
+    valid_move?(board, input_to_index(user_move))
+    counter += 1
+  end
       end
 end
