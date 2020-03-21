@@ -31,5 +31,5 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  user_name = gets.sort.to_i
+  user_name = gets.to_i
 end
