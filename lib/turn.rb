@@ -37,6 +37,7 @@ def turn(board)
     until counter < 10
       puts "Please enter another number:"
       counter += 1
+    end
     else
       move (board, user_move, value = "X")
     end
