@@ -37,6 +37,7 @@ def turn(board)
     until counter < 10
       puts "Please enter another number:"
       user_move = gets.to_i
+      valid_move?(board, input_to_index(user_move))
       counter += 1
     end
   end
